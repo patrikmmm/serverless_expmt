@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 
 class Details(BaseModel):
-    '''random deatils'''
+    '''random details'''
     var1: int
     var2: str
 

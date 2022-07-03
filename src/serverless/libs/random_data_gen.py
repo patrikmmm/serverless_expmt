@@ -1,7 +1,7 @@
 '''Generates a lif of random customers'''
 import random
 import string
-import customer as cust
+import serverless.libs.customer as cust
 
 
 def get_random_string(length: int):
