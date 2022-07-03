@@ -11,6 +11,7 @@ flake8 = "^4.0.1"
 mypy = "^0.961"
 fastapi = "^0.78.0"
 mangum = "^0.15.0"
+pymongo = "^4.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
