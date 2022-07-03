@@ -1,4 +1,4 @@
-from serverless import __version__
+from serverless.main import __version__
 
 
 def test_version():

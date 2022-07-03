@@ -12,9 +12,11 @@ mypy = "^0.961"
 fastapi = "^0.78.0"
 mangum = "^0.15.0"
 pymongo = "^4.1.1"
+pydantic = "^1.9.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+uvicorn = "^0.18.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
