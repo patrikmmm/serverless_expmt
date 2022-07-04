@@ -53,8 +53,7 @@ coverage.xml
 
 # AWS
 .*/
-.gitignore
-.DS_STORE
+.DS_Store
 
 # Translations
 *.mo
