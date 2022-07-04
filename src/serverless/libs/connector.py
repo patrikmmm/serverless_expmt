@@ -33,3 +33,9 @@ def get_collection(client, col_name):
 
 def add_customer(collection, payload):
     collection.insert_one(payload)
+
+
+def find_customer_by_id(collection, id):
+    query = {"id": id}
+    result = collection.find(query)
+    return result
