@@ -7,7 +7,6 @@ CONNECTION_STRING = "mongodb://docker:mongopw@localhost:55000"
 
 def populate_mongo(count: int):
     def get_database():
-        CONNECTION_STRING = "mongodb://docker:mongopw@localhost:55000"
         client = MongoClient(CONNECTION_STRING)
         return client['SCV']
 
@@ -37,5 +36,5 @@ def add_customer(collection, payload):
 
 def find_customer_by_id(collection, id):
     query = {"id": id}
-    result = collection.find(query)
+    result = collection.find_one(query)
     return result
