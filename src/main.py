@@ -4,11 +4,11 @@ from mangum import Mangum
 import serverless.libs.random_data_gen as rdg
 import serverless.libs.customer as co
 import serverless.libs.connector as cntr
-import uvicorn #for debugging only
+""" import uvicorn #for debugging only """
 
 __version__ = '0.1.0'
-#CONNECTION_STRING = "mongodb://docker:mongopw@host.docker.internal:55000"
-CONNECTION_STRING = "mongodb://docker:mongopw@localhost:55000" #for debugging only
+CONNECTION_STRING = "mongodb://docker:mongopw@host.docker.internal:55000"
+#CONNECTION_STRING = "mongodb://docker:mongopw@localhost:55000" #for debugging only
 
 app = FastAPI()
 
@@ -40,5 +40,6 @@ def post_cust(customer: co.CustomerObject):
 handler = Mangum(app)
 
 #debugger code
-if __name__ == "__main__":
+""" if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
+ """
